@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    The marginal tax rate is the tax rate you pay on an additional dollar of income.
+    In the United States, the federal marginal tax rate for individuals increases as
+    income rises. This method of taxation, known as progressive taxation, aims to tax
+    individuals based upon their earnings, with low-income earners being taxed
+    at a lower rate than higher-income earners.
+
+    source: https://www.investopedia.com/terms/m/marginaltaxrate.asp
+-->
+
+
+<taxRules year="2021">
+
+    <group status="single">
+        <taxRule status="s"  rate="0.1" range1="0" range2="9950"/>
+        <taxRule status="s"  rate="0.12" range1="9950" range2="40525"/>
+        <taxRule status="s"  rate="0.22" range1="40525" range2="86375"/>
+        <taxRule status="s"  rate="0.24" range1="86375" range2="164925"/>
+        <taxRule status="s"  rate="0.32" range1="164925" range2="209425"/>
+        <taxRule status="s"  rate="0.35" range1="209425" range2="523600"/>
+        <taxRule status="s"  rate="0.37" range1="523600" range2="max"/>
+    </group>
+
+    <group status="married filing jointly">
+        <taxRule status="mfj"  rate="0.1" range1="0" range2="19900"/>
+        <taxRule status="mfj"  rate="0.12" range1="19900" range2="81050"/>
+        <taxRule status="mfj"  rate="0.22" range1="81050" range2="172750"/>
+        <taxRule status="mfj"  rate="0.24" range1="172750" range2="329850"/>
+        <taxRule status="mfj"  rate="0.32" range1="329850" range2="418850"/>
+        <taxRule status="mfj"  rate="0.35" range1="418850" range2="628300"/>
+        <taxRule status="mfj"  rate="0.37" range1="628300" range2="max"/>
+    </group>
+
+    <group status="head of house hold">
+        <taxRule status="hh"  rate="0.1" range1="0" range2="14200"/>
+        <taxRule status="hh"  rate="0.12" range1="14200" range2="54200"/>
+        <taxRule status="hh"  rate="0.22" range1="54200" range2="86350"/>
+        <taxRule status="hh"  rate="0.24" range1="86350" range2="164900"/>
+        <taxRule status="hh"  rate="0.32" range1="164900" range2="209400"/>
+        <taxRule status="hh"  rate="0.35" range1="209400" range2="523600"/>
+        <taxRule status="hh"  rate="0.37" range1="523600" range2="max"/>
+    </group>
+</taxRules>
