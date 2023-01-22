@@ -3,11 +3,9 @@ import xml.etree.cElementTree as ET
 import pprint
 
 from statistics import mean
-
 from calculate_result import getResults
 
 data_directory = os.environ.get('CST_3519_2020')
-
 
 # Printing attribute of the retirement tag
 def retirement_tag(mode="s01"):
